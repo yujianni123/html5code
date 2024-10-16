@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Transition</title>
+</head>
+    <style>
+
+#box{
+ display: flex;
+ height: 200px;
+ width: 200px;
+ background-color: red;
+ justify-content: center;
+ align-items: center;
+ transition-property: background-color;
+ transition-duration: 1s;
+ transition-delay: 1s;
+ }
+#box:hover{
+ background-color: blue;
+ color: azure;
+ height: 400px;
+ width: 400px;
+ text-transform: uppercase;
+ border-radius: 50%;
+ font-size: 25px;
+}
+
+ /* The box we want to animate */
+ .box {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ position: relative;
+animation: moveAndChangeColor 5s infinite;
+ }
+ /* Keyframes for the animation */
+@keyframes moveAndChangeColor {
+ 0% {
+left: 0; background-color: red;
+}
+50% {
+ left: 300px;
+        background-color: blue;
+ }
+ 100% {
+ left: 0; background-color: red;
+ }
+ }
+
+
+
+ </style>
+<body>
+ <h3>CSS Transition example</h3>
+ <div class="container">
+ <div id="box">
+ This is my box
+ </div>
+ </div>
+</body>
+</html>

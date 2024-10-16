@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Animation Example</title>
+
+
+<style>
+ /* The box we want to animate */
+ .box {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ position: relative;
+animation: moveAndChangeColor 5s infinite;
+ }
+ /* Keyframes for the animation */
+@keyframes moveAndChangeColor {
+ 0% {
+left: 0; background-color: red;
+}
+50% {
+ left: 300px;
+        background-color: blue;
+ }
+ 100% {
+ left: 0; background-color: red;
+ }
+ }
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
