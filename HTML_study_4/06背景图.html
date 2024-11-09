@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图</title>
+    <style>
+        div {
+            width: 960px;
+            height: 800px;
+            background-image: url(../SkyLight/images/2.jpg);
+            text-align: center;
+
+            background-position: 50px -50px;
+        }
+
+        .box {
+            background-image: url(../SkyLight/images/4.jpg);
+            background-color: pink;
+            background-repeat: no-repeat;
+            background-position: center 50px;
+        }
+
+        .box1 {
+            background-image: url(../SkyLight/images/4.jpg);
+            background-color: pink;
+            background-repeat: repeat;
+            background-position: center bottom;
+        }
+
+        .box2 {
+            background-image: url(../SkyLight/images/4.jpg);
+            background-color: pink;
+            background-repeat: repeat-x;
+        }
+
+        .box3 {
+            background-image: url(../SkyLight/images/4.jpg);
+            background-color: pink;
+            background-repeat: repeat-y;
+        }
+        .div1 {
+            background: #000 url(../SkyLight/images/4.jpg) no-repeat right center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">用于设置背景图</div>
+
+    <div class="box">用于设置背景图平铺方式 no-repeat</div>
+    <div class="bpx1">用于设置背景图平铺方式 repeat</div>
+    <div class="box2">用于设置背景图平铺方式 repeat-x</div>
+    <div class="box3">用于设置背景图平铺方式 repeat-y</div>
+</body>
+</html>

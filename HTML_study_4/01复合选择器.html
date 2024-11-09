@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器 */
+        div span {
+            color: blueviolet;
+        }
+        /* 子代选择器 */
+        div > span {
+            color: yellowgreen;
+        }
+        /* 并集选择器 */
+        div,span,p {
+            color: red;
+        }
+        /* 交集选择器 */
+        p.box {
+            color: brown;
+        }
+        .box {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- 后代选择器 -->
+    <span>这是用于对比是span标签</span>
+    <div>
+        <span>使用后代选择器修改后span标签</span>
+        <p>
+            <span>在下一级的span标签</span>
+        </p>
+    </div>
+    <p class="box">p标签，选择了类选择器</p>
+    <p>p标签</p>
+    <div class="box">div标签，选择了类选择器</div>
+</body>
+</html>
