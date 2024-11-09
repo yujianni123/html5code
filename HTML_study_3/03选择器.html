@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        p {
+            /* 标签选择器 */
+            color:lightpink;    
+        }
+        .red{
+            /* 类选择器 */
+            color: red;
+            font-family: sans-serif;
+        }
+        #blue{
+            color: blue;
+            font-family: sans-serif;
+        }
+        *{
+            color:coral;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: aquamarine;">
+        <p>标签选择器测试</p>
+        <p>选中同名标签设置相同样式</p>
+        <p>无法差异化同名标签样式</p><br><br>
+    </div>
+   
+    <div>
+        <p class="red">类选择器测试</p>
+        <p class="red">可差异化设置标签显示效果</p>
+        <div>一个选择器可供不同类型标签使用</div>
+    </div><br><br>
+    
+    <div style="background-color:cornflowerblue;">
+        <p id="blue">id选择器测试</p>
+        <p id="blue">同一个id名，在一个页面中只能出现一次</p>
+    </div>
+
+    <p>通配符选择器测试</p>
+    <h3>自动查找页面所有标签</h3>
+    <ul>
+        <li>hahah</li>
+        <li>意义</li>
+    </ul>
+</body>
+</html>

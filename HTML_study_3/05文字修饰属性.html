@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字修饰属性</title>
+    <style>
+        body{
+            font:normal 400 30px/2 楷体;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 2;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        div {
+            background-color: aqua;
+            font-style: italic;
+            height: 100px;
+            width: 500px;
+            line-height: 100px;
+            font-family: 楷体;
+        }
+    </style>
+</head>
+
+<body>
+    <p>用于测试字体大小,必须要有单位px</p>
+    <h3>用于测试字体粗细</h3>
+    <p>字体变粗</p>
+
+    <em>em标签时期变为不倾斜的</em>
+    <div>DIV标签变为倾斜的</div>
+
+    <p style="text-indent: 2em;">
+        在宁静的清晨，当第一缕阳光穿透薄雾，轻轻拂过大地
+        整个世界仿佛都被赋予了新的生命。鸟儿在枝头欢快地歌唱，仿佛在迎接这美好的一天。微风拂过，
+        树叶轻轻摇曳，发出沙沙的声响，与鸟鸣交织成一首动听的交响乐。
+        远处，群山连绵，云雾缭绕，宛如一幅美丽的画卷。山脚下，小溪潺潺，清澈见底，
+        鱼儿在水中自由穿梭，仿佛在享受着这宁静的时光。岸边，野花盛开，香气扑鼻，引来蝴蝶翩翩起舞，构成了一幅生机勃勃的景象。
+        在这宁静而美丽的早晨，人们纷纷走出家门，开始新的一天。他们或步行，或骑行，或驾车，
+        都怀揣着对未来的憧憬和期待。街角的小店里，老板们忙碌地准备着早餐，热气腾腾的食物散发着诱人的香味，
+        吸引着过往的行人驻足品尝。
+        这是一个充满希望和活力的早晨，一个让人心旷神怡、精神焕发的时刻。让我们珍惜每一个这样的早晨，
+        用饱满的热情和坚定的信念去迎接每一个新的挑战和机遇。
+    </p>
+
+    <!-- 文字水平对齐方式 -->
+    <p style="text-align: left;">文字左对齐</p>
+    <p style="text-align: center;">文字居中对齐</p>
+    <p style="text-align: right;">文字右对齐</p>
+    <p style="text-align:end;">文字end对齐</p>
+    <p style="text-align:justify;">文字justify对齐</p>
+    <p style="text-align:start;">文字start对齐</p>
+    <p style="text-align:inherit;">文字inherit对齐</p>
+    <p style="text-align:initial;">文字initial对齐</p>
+    <p style="text-align:unset;">文字unset对齐</p>
+
+    <!-- 图片水平居中方式 -->
+     <div style="text-align: center;">
+        <img src="../SkyLight/images/5.jpg" alt="图片" >
+     </div>
+
+     <!-- 文本修饰线 -->
+      <a href="#" style="text-decoration: none;">去掉超链接下划线</a>
+      <p style="text-decoration: underline;">添加下划线</p>
+      <p style="text-decoration: lawngreen line-through;">添加删除线</p>
+      <p style="text-decoration: overline;">添加上画线</p>
+
+      <!-- 文字颜色表示方法 -->
+       <p style="color: aqua;">颜色关键字</p>
+       <p style="color:rgb(99, 48, 94);">rgb表示法：rgb(r,g,b)</p>
+       <p style="color: rgba(23, 243,254, 0.8);">rgba表示法：rgba(r,g,b,a)</p>
+       <p style="color: #1d6fc1;">十六进制表示法RRGGBB</p>
+</body>
+
+</html>
