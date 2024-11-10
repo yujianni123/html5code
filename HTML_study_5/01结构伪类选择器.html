@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        li:first-child {
+            background-color: #234;
+        }
+        li:last-child {
+            background-color: rgb(106, 47, 5);
+        }
+        li:nth-child(5) {
+            background-color: blueviolet;
+        }
+        li:nth-child(3) {
+            background-color: burlywood;
+        }
+        li:nth-child(8) {
+            background-color: burlywood;
+        }
+        li:nth-child(2n) {
+            background-color: #ed3;
+        }
+        li:nth-child(2n-1) {
+            background-color: #bc3;
+        }
+        li:nth-child(n+5) {
+            background-color: palevioletred;
+        }
+        li:nth-child(-n+5) {
+            background-color: #ed3;
+        }
+        li:nth-child(3n) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+    <li>li4</li>
+    <li>li5</li>
+    <li>li6</li>
+    <li>li7</li>
+    <li>li8</li>
+    <li>li9</li>
+    <li>li10</li>
+</body>
+</html>
