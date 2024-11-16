@@ -1,0 +1,265 @@
+/* 各个网页相同模块的相同样式 */
+/* 版心样式 */
+.wrapper {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+/* 快捷栏 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    color: #fff;
+    /* background-color: pink; */
+}
+
+.shortcut ul {
+    display: flex;
+    line-height: 52px;
+}
+
+.shortcut li a {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.shortcut li .iconfont {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.shortcut li .login {
+    color: #5eb69c;
+}
+
+
+/* 头部区域 */
+.header{
+    display: flex;
+    height: 88px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    /* background-color: pink; */
+}
+
+/* logo区域 */
+.logo {
+    width: 200px;
+    height: 88px;
+    margin-right: 42px;
+}
+
+.logo a {
+    font-size: 0;
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+}
+
+/* 导航区域 */
+.nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 47px;
+}
+
+.nav li a {
+    padding-bottom: 10px;
+    /* background-color: skyblue; */
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #5eb69c;
+    color: #5eb69c;
+}
+/* 搜索区域 */
+.search {
+    display: flex;
+    width: 170px;
+    height: 34px;
+    margin-top: 33px;
+    margin-right: 45px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.search .iconfont {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.search input {
+    flex: 1;
+    width: 0;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* 购物车 */
+.cart {
+    position: relative;
+    margin-top: 32px;
+}
+
+.cart .iconfont{
+    font-size: 24px;
+}
+
+.cart i {
+    position:absolute;
+    line-height: 15px;
+    top: -3px;
+    left: 8px;
+    padding: 0 6px;
+    height: 15px;
+    font-size: 14px;
+    color: #fffefe;
+    background-color: #e26237;
+    border-radius: 8px;
+}
+
+/* 底部区域 */
+.footer {
+    height: 580px;
+    background-color: #f5f5f5;
+}
+
+/* 服务 */
+.service {
+    padding: 60px 0;
+    height:  178px;
+    border: 1px solid #e8e8e8;
+}
+
+.service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service li {
+    display: flex;
+    width: 190px;
+    height: 58px;
+    /* background-color: pink; */
+}
+.service li h5 {
+    width: 58px;
+    height: 58px;
+    margin-right: 20px;
+    background: url(../images/sprite.png) 0 -232px;
+}
+
+.service li:nth-child(2) h5 {
+    background-position: 0 -290px;
+}
+
+.service li:nth-child(3) h5 {
+    background-position: 0 -348px;
+}
+
+.service li:nth-child(4) h5 {
+    background-position: 0 -406px;
+}
+
+.service p {
+    font-size: 28px;
+    line-height: 58px;
+}
+.help {
+    height: 300px;
+    /* background-color: pink; */
+}
+
+/* 帮助 */
+.help {
+    height: 300px;
+    padding-top: 60px;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* 左 */
+.help .left {
+    display: flex;
+}
+
+.help .left dl {
+    margin-right: 84px;
+}
+
+.help .left dl:nth-child(last) {
+    margin-right: 0;
+}
+
+.help .left .iconfont{
+    font-size: 16px;
+    padding-left: 5px;
+    color: #5eb69c;
+}
+
+.help .left dt {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.help .left dd {
+    margin-bottom: 10px;
+}
+
+.help .left dd a{
+    font-size: 16px;
+    color: #969696;
+}
+
+/* 右 */
+.help .right li:nth-child(1) {
+    margin-right: 55px;
+}
+
+.help .right ul{
+    display: flex;
+}
+
+.help .right .pic {
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.help .right p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #969696;
+}
+
+/* 版权 */
+.copyright p{
+    margin-bottom: 10px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: #a1a1a1;
+}
+.copyright a {
+    margin: 0 10px;
+    color: #a1a1a1;
+}
