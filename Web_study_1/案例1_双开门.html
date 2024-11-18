@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-双开门</title>
+    <style>
+        .father {
+            display: flex;
+            overflow: hidden;
+            width: 1366px;
+            height: 600px;
+            margin: 100px auto;
+            background-image: url(./images/bg.jpg);
+        }
+
+        .father .left,
+        .father .right {
+            transition: all 0.5s;
+            width: 50%;
+            height: 600px;
+            background-image: url(./images/fm.jpg);
+            
+        }
+
+        .father .right {
+            background-position: right 0;
+        }
+
+        .father:hover .left {
+            transform: translate(-100%, 0);
+        }
+        .father:hover .right {
+            transform: translate(100%, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

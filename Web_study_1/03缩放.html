@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放</title>
+    <style>
+        .box {
+            margin: 100px auto;
+            width: 300px;
+            height: 210px;
+            background-color: pink;
+        }
+
+        img {
+            width: 100%;
+            transition: all 1s;
+        }
+
+        .box:hover img {
+            transform: scale(2);
+            transform: scale(0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/product.jpeg" alt="">
+    </div>
+</body>
+</html>

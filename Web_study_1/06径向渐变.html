@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>径向渐变</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50%;
+            background-image: radial-gradient(
+                50px at center center,
+                skyblue,
+                rgba(7, 122, 105, 0.345)
+            );
+            background-image: radial-gradient(
+                50px 30px at center center,
+                skyblue,
+                rgba(7, 122, 105, 0.345)
+            );
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: aquamarine;
+            border-radius: 5px;
+            border: 0;
+            color: #fff;
+            background-image: radial-gradient(
+                30px at 30px 20px,
+                rgba(255,255,255,0.6),
+                transparent
+            );
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <button>按钮</button>
+</body>
+</html>
