@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation复合属性</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            animation: change 1s infinite alternate-reverse;
+            animation: change 1s forwards;
+
+            animation-name: change;
+            animation-duration:1s ;
+            animation-delay: 3s;
+            animation-fill-mode: backwards;
+            animation-timing-function: steps(3);
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+           
+        }
+
+        @keyframes change {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 800px;
+            }
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间转换-平移</title>
+    <style>
+        div {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 1s;
+        }
+
+        div:hover {
+            /* 默认情况下看不见Z轴变化效果 */
+            transform: translate3d(122px,234px,123px);
+            transform: translateX(40%);
+            transform: translateY(40%);
+            transform: translateZ(40%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
